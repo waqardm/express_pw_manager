@@ -1,55 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <meta name="google-signin-client_id" content="231538538434-v30oqvle52snolbctcsmcbn47atnru5p.apps.googleusercontent.com"> -->
-    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
-    <script src="src/main.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-            crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-
-    <title>Login</title>
-</head>
-    <body>
-        <div class="container">
-            <div>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle margin-top" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="far fa-lg fa-user"></i></a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" id='logoutButton' href="/">Logout</a>
-                        </div>
-                    </li>
-                </ul>
+<%- include('inc/header') %>
+<div class="container">
+    <div class="colums margin-top-index has-text-centered">
+            <h1 class="title">Password Manager</h1>
+    </div>
+    <div class="columns is-centered">
+        <div class="column is-three-quarters">
+            <div class="field">
+                <label for="email" class="label">Email</label>
+                <div class="control">
+                    <input type="text" class="input" placeholder="Please enter your email">
+                </div>
             </div>
-            <div class="centered margin-top">
-                <h2>Password Manager</h2>
-                <h4>Login</h4>
+            <div class="field">
+                <label for="password" class="label">Password</label>
+                <div class="control">
+                    <input type="password" class="input" placeholder="Please enter your password">
+                </div>
             </div>
-            <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            <div class="data">
-                <p>Profile Details</p>
-                <img src="" id="pic" class="img-circle" width="100" height="100" alt="">
-                <p>Email Address</p>
-                <button id="signOutButton" class="btn btn-danger">Sign Out</button>
-            </div> -->
+            <div class="column">
+                <a href="#" class="button is-full-width is-success">Login</a>
+                <a href="#" class="button is-link is-pulled-right">Register</a>
+            </div>        
         </div>
+    </div> <!-- columns -->
+
+    <div class="columns is-centered ">
+        <div class="column is-three-quarters">
+            <a href="#" class="has-text-grey is-pulled-right">Forgotton Password</a>
+        </div>
+    </div>
+</div> <!-- container -->
         
 
-        
+              
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+<%- include('inc/footer') %>
