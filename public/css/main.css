@@ -12,6 +12,10 @@ h2 {
     font-size: 40px;
 }
 
+td {
+    width: 30%;
+}
+
 .centered {
   position: fixed;
   top: 20%;
@@ -20,16 +24,12 @@ h2 {
   margin-left: -100px;
 }
 
-.g-signin2 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -30px;
-}
-
 .data {
     display: block;
+}
+
+.row-data {
+    cursor: pointer;
 }
 
 .hidden {
